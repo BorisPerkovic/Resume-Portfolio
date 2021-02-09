@@ -1,0 +1,29 @@
+#Zabrana prikazivanja sadržaja foldera u koliko ne postoje index.php ili index.html fajlovi
+Options -Indexes
+
+#Zaštita foldera lozinkom
+#AuthUserFile c:/wamp64/www/Resume/.htpasswd
+#AuthName "Unesite korisnicko ime i lozinku"
+#AuthType Basic
+#require valid-user
+
+#Sadržaj .htpasswd fajla je u obliku:
+#korisnik:lozinka
+#gde se korisničko ime i lozinka kreiraju pokretanjem komande
+#iz command prompta, i to u bin folderu apache servera:
+#cd C:\wamp64\bin\apache\apache2.4.41\bin
+#htpasswd -nb username password
+
+#ErrorDocument varijante prikazivanja sopstvenih stranica za greške
+ErrorDocument 404 "Zeljena stranica ne postoji. Molimo Vas, vratite se nazad. / Requested page does not exict. Please, return back."
+ErrorDocument 403 "Nemate dozvolu da pristupite fajlovima na ovaj nacin. Molimo Vas, vratite se nazad. / You do not have permission to access this file. Please, return back."
+ErrorDocument 401 "Vasi podaci su neispravni. Unesite ispravne podatke"
+
+#NAPOMENA:
+# U slučaju da sadržaj .htaccess fajla ima grešku (npr. u kucanju), pojaviće se Apache Error 500, koji ne može da se predefiniše #direktivom #ErrorDocument iz .htacccess fajla
+#već samo u glavnom konfiguracionom fajlu httpd.conf
+
+#Rewrite fajlova 
+RewriteEngine On
+
+

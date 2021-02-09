@@ -1,0 +1,439 @@
+/*
+
+New Event
+
+http://www.templatemo.com/tm-486-new-event
+
+*/
+
+body {
+		background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+		font-weight: 400;
+}
+
+
+/*---------------------------------------
+    Typorgraphy              
+-----------------------------------------*/
+p{
+  font-size: 17px;
+}
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+.color{
+  color: rgb(2,160,161);
+  margin-bottom: 35px;
+}
+hr.hr{
+  border: 1px solid rgb(228, 227, 227);
+}
+/*---------------------------------------
+    General               
+-----------------------------------------*/
+
+#about,
+#portfolio {
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+}
+#skills{
+  padding-top: 17rem;
+  padding-bottom: 17rem;
+}
+#experience, #education,
+#contact {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.parallax-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+}
+
+
+
+/*---------------------------------------
+    Preloader section              
+-----------------------------------------*/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+
+.sk-rotating-plane {
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+
+/*---------------------------------------
+    Navigation Links section              
+-----------------------------------------*/
+.custom-navbar {
+  margin-bottom: 0;
+  background-color: #101010;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 40px;
+}
+
+.custom-navbar .nav li a {
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .nav li a:hover {
+  background: transparent;
+  color: #66ccff;
+}
+
+.custom-navbar .navbar-nav > li > a:hover,
+.custom-navbar .navbar-nav > li > a:focus {
+background-color: transparent;
+}
+
+.custom-navbar .nav li.active > a {
+  background-color: transparent;
+  color: #66ccff;
+}
+
+.custom-navbar .navbar-toggle {
+  border: none;
+  padding-top: 10px;
+}
+
+.custom-navbar .navbar-toggle {
+  background-color: transparent;
+}
+
+.custom-navbar .navbar-toggle .icon-bar {
+  background: #ffffff;
+  border-color: transparent;
+}
+
+@media(min-width:768px) {
+  .custom-navbar {
+      padding: 20px 0;
+      border-bottom: 0;
+      background: 0 0; 
+  }
+  .custom-navbar.top-nav-collapse {
+      background: #101010;
+      padding: 0;
+  }
+
+}
+
+
+
+/*---------------------------------------
+    Intro section              
+-----------------------------------------*/
+#intro {
+   background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("../hero_main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 !important;
+    padding-top: 500px;
+    padding-bottom: 500px;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -webkit-flex;
+     display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+     -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+    /*height: 80vh;*/
+}
+#intro h1 {
+  font-size: 70px;
+  letter-spacing: 2px;
+}
+
+#intro h4{
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+#intro h6{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+
+
+/*---------------------------------------
+   About  section              
+-----------------------------------------*/
+#about {
+  color: #000000;
+  background-color: #fff;
+}
+#resume_pdf a{
+  color: #000;
+}
+#resume_pdf a:hover{
+  color: tomato;
+  border-bottom: 1px solid tomato;
+}
+
+/*---------------------------------------
+    Skills section              
+-----------------------------------------*/
+#skills {
+    background: #222;
+    color: #ffffff;
+}
+.professional{
+    margin-bottom: 20px;
+}
+.php{
+  margin-top: 50px;
+}
+.sql{
+  margin-top: 50px;
+}
+.ajax{
+  margin-top: 60px;
+}
+.bootstrap{
+  margin-top: 20px;
+}
+
+
+
+/*---------------------------------------
+    Experience section              
+-----------------------------------------*/
+.cardBody{
+    background: rgb(2,160,161);
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.caption{
+    background: #f2f5f9;
+    padding: 20px;
+    min-height: 224px;
+    box-shadow: 0 4px 8px 0 rgba(15, 10, 10, 0.3);
+}
+
+/*---------------------------------------
+   Education section              
+-----------------------------------------*/
+#education{
+    background: #f2f5f9;
+}
+.border{
+    border-left: 2px solid rgb(2,160,161);
+    border-bottom: 1px solid rgb(214, 213, 213);
+    margin-left: 15px;
+}
+.border_bottom{
+  border-left: 2px solid rgb(2,160,161);
+  margin-left: 15px;
+}
+.card{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.education{
+  margin-top: 45px;
+}
+
+
+
+/*---------------------------------------
+    Portfolio section              
+-----------------------------------------*/
+#portfolio {
+    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #ffffff;
+}
+.portfolio{
+    padding: 10px;
+    color: #707070;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    
+}
+.portfolio:hover{
+  border-color: rgb(2,160,161);
+  transition: all 1.7s ease;
+}
+.portfolio a{
+  font-size: 24px;
+  color: rgb(2,160,161);
+}
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+#contact {
+  background: #f2f5f9;
+}
+.contact{
+    margin-top: 60px;
+}
+.col-md-3{
+  border-top: 1px solid rgb(2,160,161);
+  margin-bottom: 30px;
+}
+.col-md-3 a{
+  font-weight: 500;
+  color: #000;
+}
+.font_awesome{
+  font-size: 25px;
+  color: rgb(2,160,161);
+  margin-top: -23px;
+  margin-bottom: 45px;
+}
+.font_awesome i{
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid rgb(2,160,161);
+  background: #fff;
+}
+
+
+/* Back top */
+.go-top {
+  background-color: #222;
+  bottom: 2em;
+  right: 2em;
+  color: #ffffff;
+  font-size: 32px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.go-top:hover {
+    background: #f2545f;
+    color: #ffffff;
+}
+
+/*---------------------------------------
+   Footer section              
+-----------------------------------------*/
+
+footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #707070;
+}
+.copy{
+    font-size: 14px;
+}
+
+
+/*---------------------------------------
+   Responsive styles            
+-----------------------------------------*/
+@media (max-width: 991px){
+  .bootstrap{
+    margin-top: -200px;
+  }
+}
+@media (max-width: 980px) {
+  p {font-size: 13px;}
+
+  .custom-navbar .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .custom-navbar .nav li a {
+    font-size: 11px;
+	line-height: 20px;
+  }
+
+  #intro { height: 65vh; }
+}
+@media (max-width: 768px) {
+
+  .custom-navbar .navbar-brand {
+    line-height: 20px;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  #intro {
+    height: 100vh;
+  }
+  .bootstrap{
+    margin-top: -180px;
+  }
+}
+@media (max-width: 630px) {
+
+  .bootstrap{
+    margin-top: -120px;
+  }
+}
+
+
