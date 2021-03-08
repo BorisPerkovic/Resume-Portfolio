@@ -178,13 +178,10 @@ background-color: transparent;
     Intro section              
 -----------------------------------------*/
 #intro {
-   background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("../hero_main.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+   background-image: url('../AirBrush_20200826211419.jpg');
+   -webkit-background-size: cover;
     background-size: cover;
-    border-radius: 0 !important;
-    padding-top: 500px;
-    padding-bottom: 500px;
+    background-position: center center;
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -194,7 +191,7 @@ background-color: transparent;
      -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-    /*height: 80vh;*/
+    height: 95vh;
 }
 #intro h1 {
   font-size: 70px;
