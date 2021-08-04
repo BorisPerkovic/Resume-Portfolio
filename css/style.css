@@ -1,61 +1,32 @@
-/*
-
-New Event
-
-http://www.templatemo.com/tm-486-new-event
-
-*/
-
 body {
-		background: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-		font-weight: 400;
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding-top: -96px;
 }
 
 
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
-p{
+p {
   font-size: 17px;
 }
+
 a {
   text-decoration: none !important;
   outline: none;
 }
-.color{
-  color: rgb(2,160,161);
+
+.color {
+  color: rgb(2, 160, 161);
   margin-bottom: 35px;
 }
-hr.hr{
+
+hr.hr {
   border: 1px solid rgb(228, 227, 227);
 }
-/*---------------------------------------
-    General               
------------------------------------------*/
-
-#about,
-#portfolio {
-  padding-top: 17rem;
-  padding-bottom: 17rem;
-}
-#skills{
-  padding-top: 17rem;
-  padding-bottom: 17rem;
-}
-#experience, #education,
-#contact {
-    padding-top: 14rem;
-    padding-bottom: 14rem;
-}
-
-.parallax-section {
-  background-attachment: fixed !important;
-  background-size: cover !important;
-}
-
-
 
 /*---------------------------------------
     Preloader section              
@@ -79,95 +50,122 @@ hr.hr{
   height: 50px;
   background-color: #222;
   -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
-          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+  animation: sk-rotatePlane 1.2s infinite ease-in-out;
+}
 
 @-webkit-keyframes sk-rotatePlane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 
 @keyframes sk-rotatePlane {
   0% {
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
 
 
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../AirBrush_20200826211419.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 !important;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  height: 100vh;
+  color: #ffffff;
+}
 
 /*---------------------------------------
     Navigation Links section              
 -----------------------------------------*/
-.custom-navbar {
+
+.navbar {
   margin-bottom: 0;
-  background-color: #101010;
+  background: #222 !important;
 }
 
-.custom-navbar .navbar-brand {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 40px;
-}
-
-.custom-navbar .nav li a {
-  color: #ddd;
+.nav-link {
+  color: #ddd !important;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 5px;
   transition: all 0.4s ease-in-out;
 }
 
-.custom-navbar .nav li a:hover {
+.nav-link:hover {
   background: transparent;
-  color: #66ccff;
+  color: #66ccff !important;
 }
 
-.custom-navbar .navbar-nav > li > a:hover,
-.custom-navbar .navbar-nav > li > a:focus {
-background-color: transparent;
+.nav-link:hover,
+.nav-link:focus {
+  background-color: transparent;
 }
 
-.custom-navbar .nav li.active > a {
+.nav-link.active {
   background-color: transparent;
   color: #66ccff;
 }
 
-.custom-navbar .navbar-toggle {
+.navbar-toggler {
   border: none;
-  padding-top: 10px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: none !important;
+  color: white;
+  padding-top: 5px;
+  
 }
 
-.custom-navbar .navbar-toggle {
-  background-color: transparent;
+.navbar-light .navbar-toggler-icon:hover {
+  color: #66ccff !important;
 }
 
-.custom-navbar .navbar-toggle .icon-bar {
-  background: #ffffff;
-  border-color: transparent;
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 @media(min-width:768px) {
-  .custom-navbar {
-      padding: 20px 0;
-      border-bottom: 0;
-      background: 0 0; 
+  .navbar {
+    padding: 20px 0;
+    border-bottom: 0;
+    background: 0 0;
   }
-  .custom-navbar.top-nav-collapse {
-      background: #101010;
-      padding: 0;
+
+  .navbar.top-nav-collapse {
+    background: #101010;
+    padding: 0;
   }
 
 }
@@ -178,48 +176,23 @@ background-color: transparent;
     Intro section              
 -----------------------------------------*/
 #intro {
-   background-image: url('../AirBrush_20200826211419.jpg');
-   -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -webkit-flex;
-     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-    height: 95vh;
-}
-#intro h1 {
-  font-size: 70px;
   letter-spacing: 2px;
 }
-
-#intro h4{
-  font-size: 40px;
-  letter-spacing: 2px;
-}
-#intro h6{
-  font-size: 20px;
-  letter-spacing: 2px;
-}
-
-
 
 /*---------------------------------------
    About  section              
 -----------------------------------------*/
 #about {
+  padding: 120px 0;
   color: #000000;
   background-color: #fff;
 }
-#resume_pdf a{
+
+#resume_pdf a {
   color: #000;
 }
-#resume_pdf a:hover{
+
+#resume_pdf a:hover {
   color: tomato;
   border-bottom: 1px solid tomato;
 }
@@ -228,23 +201,9 @@ background-color: transparent;
     Skills section              
 -----------------------------------------*/
 #skills {
-    background: #222;
-    color: #ffffff;
-}
-.professional{
-    margin-bottom: 20px;
-}
-.php{
-  margin-top: 50px;
-}
-.sql{
-  margin-top: 50px;
-}
-.ajax{
-  margin-top: 60px;
-}
-.bootstrap{
-  margin-top: 20px;
+  padding: 150px 0;
+  background: rgb(19, 18, 18);
+  color: #ffffff;
 }
 
 
@@ -252,100 +211,145 @@ background-color: transparent;
 /*---------------------------------------
     Experience section              
 -----------------------------------------*/
-.cardBody{
-    background: rgb(2,160,161);
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+#experience {
+  padding: 100px 0px;
 }
-.caption{
-    background: #f2f5f9;
-    padding: 20px;
-    min-height: 224px;
-    box-shadow: 0 4px 8px 0 rgba(15, 10, 10, 0.3);
+.cardBody {
+  background: rgb(2, 160, 161);
+  color: #fff;
+}
+
+.experience {
+  margin-bottom: 70px;
 }
 
 /*---------------------------------------
    Education section              
 -----------------------------------------*/
-#education{
-    background: #f2f5f9;
+#education {
+  padding: 100px 0px;
+  background: #f2f5f9;
 }
-.border{
-    border-left: 2px solid rgb(2,160,161);
-    border-bottom: 1px solid rgb(214, 213, 213);
-    margin-left: 15px;
-}
-.border_bottom{
-  border-left: 2px solid rgb(2,160,161);
+
+.left {
+  border-left: 2px solid rgb(2, 160, 161);
+  border-bottom: 1px solid rgb(214, 213, 213);
   margin-left: 15px;
 }
-.card{
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+.left-bottom {
+  border-left: 2px solid rgb(2, 160, 161);
+  border-bottom: none;
+  margin-left: 15px;
 }
-.education{
+
+.education {
   margin-top: 45px;
+  margin-bottom: 20px;
 }
 
 
-
-/*---------------------------------------
-    Portfolio section              
------------------------------------------*/
-#portfolio {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: #ffffff;
-}
-.portfolio{
-    padding: 10px;
-    color: #707070;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    
-}
-.portfolio:hover{
-  border-color: rgb(2,160,161);
-  transition: all 1.7s ease;
-}
-.portfolio a{
-  font-size: 24px;
-  color: rgb(2,160,161);
-}
 /*---------------------------------------
    Contact section              
 -----------------------------------------*/
 #contact {
   background: #f2f5f9;
 }
-.contact{
-    margin-top: 60px;
+
+.contact {
+  margin-top: 60px;
 }
-.col-md-3{
-  border-top: 1px solid rgb(2,160,161);
+
+.col-md-3 {
+  border-top: 1px solid rgb(2, 160, 161);
   margin-bottom: 30px;
 }
-.col-md-3 a{
+
+.col-md-3 a {
   font-weight: 500;
   color: #000;
 }
-.font_awesome{
+
+.font_awesome {
   font-size: 25px;
-  color: rgb(2,160,161);
+  color: rgb(2, 160, 161);
   margin-top: -23px;
   margin-bottom: 45px;
 }
-.font_awesome i{
+
+.font_awesome i {
   padding: 10px;
   border-radius: 100%;
-  border: 1px solid rgb(2,160,161);
+  border: 1px solid rgb(2, 160, 161);
   background: #fff;
 }
 
+
+/*---------------------------------------
+    Portfolio section              
+-----------------------------------------*/
+#portfolio {
+  background: url('../images/register-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 100px 0px;
+}
+
+#portfolio .col-md-4 {
+  border: none;
+  margin-bottom: 10px;
+}
+
+.portfolio {
+  background: transparent;
+  color: #707070;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #9b9a9a;
+
+}
+.portfolio a {
+  color: #707070;
+}
+
+
+/*---------------------------------------
+   Contact section              
+-----------------------------------------*/
+#contact {
+  padding: 100px 0px;
+  background: #f2f5f9;
+}
+
+.contact {
+  margin-top: 60px;
+}
+
+.col-md-3 {
+  border-top: 1px solid rgb(2, 160, 161);
+  margin-bottom: 30px;
+}
+
+.col-md-3 a {
+  font-weight: 500;
+  color: #000;
+}
+
+.font_awesome {
+  font-size: 25px;
+  color: rgb(2, 160, 161);
+  margin-top: -23px;
+  margin-bottom: 45px;
+}
+
+.font_awesome i {
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid rgb(2, 160, 161);
+  background: #fff;
+}
 
 /* Back top */
 .go-top {
@@ -365,34 +369,38 @@ background-color: transparent;
 }
 
 .go-top:hover {
-    background: #f2545f;
-    color: #ffffff;
+  background: #f2545f;
+  color: #ffffff;
 }
 
 /*---------------------------------------
    Footer section              
 -----------------------------------------*/
 
-footer{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #707070;
+footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #707070;
 }
-.copy{
-    font-size: 14px;
+
+.copy {
+  font-size: 14px;
 }
 
 
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
-@media (max-width: 991px){
-  .bootstrap{
+@media (max-width: 991px) {
+  .bootstrap {
     margin-top: -200px;
   }
 }
+
 @media (max-width: 980px) {
-  p {font-size: 13px;}
+  p {
+    font-size: 13px;
+  }
 
   .custom-navbar .navbar-brand {
     font-size: 2rem;
@@ -400,18 +408,21 @@ footer{
 
   .custom-navbar .nav li a {
     font-size: 11px;
-	line-height: 20px;
+    line-height: 20px;
   }
 
-  #intro { height: 65vh; }
+  #intro {
+    height: 65vh;
+  }
 }
+
 @media (max-width: 768px) {
 
   .custom-navbar .navbar-brand {
     line-height: 20px;
   }
 
-  .nav-tabs > li > a {
+  .nav-tabs>li>a {
     font-size: 13px;
   }
 
@@ -422,15 +433,34 @@ footer{
   #intro {
     height: 100vh;
   }
-  .bootstrap{
+
+  .bootstrap {
     margin-top: -180px;
   }
 }
+
 @media (max-width: 630px) {
 
-  .bootstrap{
+  .bootstrap {
     margin-top: -120px;
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 415px) {
 
+  .header {
+    height: 100vh !important;
+    padding-top: 150px;
+    padding-bottom: 350px;
+    color: #ffffff;
+  }
+
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+  .experience h4 {
+    font-size: 15px;
+  }
+
+}
