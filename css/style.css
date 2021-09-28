@@ -90,7 +90,7 @@ hr.hr {
 
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("../AirBrush_20200826211419.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url("../AirBrush_20200826211419.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,14 +227,13 @@ hr.hr {
    Education section              
 -----------------------------------------*/
 #education {
-  padding: 100px 0px;
+  padding: 100px 12px;
   background: #f2f5f9;
 }
 
 .left {
   border-left: 2px solid rgb(2, 160, 161);
   border-bottom: 1px solid rgb(214, 213, 213);
-  margin-left: 15px;
 }
 
 .left-bottom {
@@ -341,7 +340,7 @@ hr.hr {
   font-size: 25px;
   color: rgb(2, 160, 161);
   margin-top: -23px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 
 .font_awesome i {
